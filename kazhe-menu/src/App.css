@@ -1,0 +1,745 @@
+/* =========================
+   COLOR SYSTEM
+========================= */
+
+:root {
+  --cream: #f1dfc5;
+  --cream-light: #fbf0df;
+  --paper: #fff8eb;
+
+  --olive: #667054;
+  --olive-dark: #46503b;
+  --olive-soft: #899078;
+
+  --wood: #805d45;
+  --caramel: #b97c50;
+  --cinnamon: #9b6243;
+
+  --text: #392e26;
+  --text-soft: #806f61;
+
+  --line: rgba(103, 82, 62, 0.13);
+
+  --shadow:
+    0 8px 24px rgba(94, 68, 45, 0.09);
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 15% 5%,
+      rgba(185, 124, 80, 0.13),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #ead1ad 0%,
+      #f5e4cc 220px,
+      #fbf0df 500px,
+      #fbf0df 100%
+    );
+
+  color: var(--text);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: relative;
+
+  padding: 52px 24px 36px;
+
+  text-align: center;
+}
+
+.header::after {
+  content: "";
+
+  display: block;
+
+  width: 42px;
+  height: 2px;
+
+  margin: 22px auto 0;
+
+  border-radius: 10px;
+
+  background: var(--olive);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  width: 76px;
+  height: 76px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid var(--olive);
+  border-radius: 50%;
+
+  background: rgba(255, 250, 240, 0.45);
+
+  color: var(--olive-dark);
+
+  font-size: 31px;
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 20px rgba(70, 81, 59, 0.08);
+}
+
+.header h1 {
+  margin: 0;
+
+  color: var(--olive-dark);
+
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.header .english-name {
+  margin: 7px 0 0;
+
+  color: var(--wood);
+
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.header .welcome {
+  margin: 15px 0 0;
+
+  color: var(--text-soft);
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   CATEGORY NAVIGATION
+========================= */
+
+.categories {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  gap: 8px;
+
+  width: 100%;
+
+  padding: 12px 20px;
+
+  overflow-x: auto;
+
+  direction: rtl;
+
+  background: rgba(250, 245, 235, 0.92);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-top: 1px solid rgba(70, 81, 59, 0.06);
+  border-bottom: 1px solid rgba(70, 81, 59, 0.1);
+
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================
+   CATEGORY BUTTON
+========================= */
+
+.categories button {
+  flex: 0 0 auto;
+
+  padding: 10px 17px;
+
+  border: 1px solid rgba(70, 81, 59, 0.22);
+  border-radius: 100px;
+
+  background: rgba(255, 250, 240, 0.55);
+
+  color: var(--olive-dark);
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.categories button:hover {
+  background: rgba(70, 81, 59, 0.08);
+}
+
+.categories button:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================
+   ACTIVE CATEGORY
+========================= */
+
+.categories button.active {
+  background: var(--olive);
+
+  color: #fffaf0;
+
+  border-color: var(--olive);
+
+  box-shadow:
+    0 5px 15px rgba(70, 81, 59, 0.18);
+}
+
+.categories button.active:hover {
+  background: var(--olive);
+  color: #fffaf0;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  padding: 27px 20px 70px;
+}
+
+
+/* =========================
+   MENU SECTION
+========================= */
+
+.menu-section {
+  margin-bottom: 40px;
+}
+
+.menu-section h2 {
+  position: relative;
+
+  margin: 0 0 20px;
+
+  padding-right: 14px;
+
+  color: var(--olive-dark);
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.menu-section h2::before {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  width: 4px;
+  height: 22px;
+
+  border-radius: 10px;
+
+  background: var(--olive);
+
+  transform: translateY(-50%);
+}
+
+
+/* =========================
+   MENU ITEMS
+========================= */
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* =========================
+   MENU CARD
+========================= */
+
+.menu-item {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 16px;
+
+  padding: 14px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(70, 81, 59, 0.1);
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff9ed 0%,
+      #f9ecd8 100%
+    );
+
+  box-shadow: var(--shadow);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.menu-item::after {
+  content: "";
+
+  position: absolute;
+
+  left: -25px;
+  bottom: -35px;
+
+  width: 75px;
+  height: 75px;
+
+  border-radius: 50%;
+
+  background: rgba(168, 111, 67, 0.045);
+
+  pointer-events: none;
+}
+
+.menu-item:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(69, 53, 37, 0.1);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.menu-item-image {
+  position: relative;
+  z-index: 2;
+
+  width: 100px !important;
+  height: 100px !important;
+
+  min-width: 100px;
+  max-width: 100px;
+
+  flex: 0 0 100px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #eadbc5;
+
+  box-shadow:
+    0 4px 14px rgba(80, 58, 40, 0.12);
+}
+
+.menu-item-image img {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-width: 0;
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: inherit;
+}
+
+
+/* =========================
+   PRODUCT CONTENT
+========================= */
+
+.menu-item-content {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  align-self: stretch;
+}
+
+.menu-item-info {
+  width: 100%;
+  min-width: 0;
+}
+
+.menu-item h3 {
+  margin: 0 0 6px;
+
+  color: var(--olive-dark);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 1.7;
+}
+
+.menu-item p {
+  margin: 0;
+
+  color: var(--text-soft);
+
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+
+/* =========================
+   SIMPLE PRICE
+========================= */
+
+.menu-item-price {
+  width: fit-content;
+
+  margin-top: 12px;
+
+  padding: 6px 10px;
+
+  border-radius: 10px;
+
+  background: rgba(102, 112, 84, 0.09);
+
+  color: var(--olive-dark);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.menu-item-price span {
+  margin-right: 3px;
+
+  color: var(--olive-soft);
+
+  font-size: 9px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   PRODUCT OPTIONS
+========================= */
+
+.menu-options {
+  width: 100%;
+
+  margin-top: 12px;
+
+  border-top: 1px solid var(--line);
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 9px 0;
+
+  color: var(--text-soft);
+
+  font-size: 11px;
+}
+
+.menu-option + .menu-option {
+  border-top: 1px dashed var(--line);
+}
+
+.menu-option strong {
+  flex-shrink: 0;
+
+  color: var(--olive-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.menu-option small {
+  margin-right: 3px;
+
+  color: var(--olive-soft);
+
+  font-size: 8px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .app {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  /* HEADER */
+
+  .header {
+    padding: 42px 20px 30px;
+  }
+
+  .logo {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 17px;
+
+    font-size: 27px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .header .english-name {
+    font-size: 10px;
+    letter-spacing: 3.5px;
+  }
+
+  .header .welcome {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .header::after {
+    margin-top: 18px;
+  }
+
+
+  /* CATEGORIES */
+
+  .categories {
+    gap: 7px;
+
+    padding: 10px 16px;
+  }
+
+  .categories button {
+    padding: 9px 14px;
+
+    font-size: 12px;
+  }
+
+
+  /* MENU */
+
+  .menu {
+    padding: 24px 16px 55px;
+  }
+
+
+  /* SECTION */
+
+  .menu-section h2 {
+    margin-bottom: 16px;
+
+    font-size: 21px;
+  }
+
+
+  /* MENU CARD */
+
+  .menu-items {
+    gap: 10px;
+  }
+
+  .menu-item {
+    gap: 12px;
+
+    padding: 12px;
+
+    border-radius: 18px;
+  }
+
+
+  /* PRODUCT IMAGE */
+
+  .menu-item-image {
+    width: 88px !important;
+    height: 88px !important;
+
+    min-width: 88px;
+    max-width: 88px;
+
+    flex: 0 0 88px;
+
+    border-radius: 14px;
+  }
+
+
+  /* TEXT */
+
+  .menu-item h3 {
+    font-size: 15px;
+  }
+
+  .menu-item p {
+    font-size: 11px;
+    line-height: 1.75;
+  }
+
+
+  /* PRICE */
+
+  .menu-item-price {
+    margin-top: 9px;
+
+    padding: 5px 8px;
+
+    font-size: 13px;
+  }
+
+
+  /* OPTIONS */
+
+  .menu-options {
+    margin-top: 10px;
+  }
+
+  .menu-option {
+    gap: 8px;
+
+    padding: 8px 0;
+
+    font-size: 10.5px;
+  }
+
+  .menu-option strong {
+    font-size: 11.5px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .categories {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .menu {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .menu-item {
+    gap: 10px;
+
+    padding: 11px;
+  }
+
+  .menu-item-image {
+    width: 76px !important;
+    height: 76px !important;
+
+    min-width: 76px;
+    max-width: 76px;
+
+    flex: 0 0 76px;
+
+    border-radius: 12px;
+  }
+
+  .menu-item h3 {
+    font-size: 14px;
+  }
+
+  .menu-item p {
+    font-size: 10.5px;
+  }
+
+  .menu-item-price {
+    font-size: 12px;
+  }
+
+  .menu-option {
+    font-size: 10px;
+  }
+
+  .menu-option strong {
+    font-size: 11px;
+  }
+}
