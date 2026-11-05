@@ -56,6 +56,13 @@ export const menu = [
       description: "یک عدد کوکی",
       price: 150000,
     },
+    {
+  id: "baklava",
+  name: "باقلوا",
+  image: "/menu-images/baklava.png",
+  description: "یک عدد باقلوا",
+  price: 400000,
+},
   ],
 },
   {
@@ -263,6 +270,7 @@ export const menu = [
     {
       id: "pistachio-karak-tea",
       name: "چای کرک پسته",
+      image: "/menu-images/pistachio-karak-tea.png",
       description:
         "۲۲۰ میلی‌لیتر، پودر چای کرک، شیر، پودر پسته",
       price: 250000,
@@ -276,6 +284,7 @@ export const menu = [
     {
       id: "espresso-shake",
       name: "شیک اسپرسو",
+      image: "/menu-images/espresso-shake.png",
       description:
         "۵۰۰ میلی‌لیتر، بستنی شیر، قهوه اسپرسو و بستنی وانیلی، یک شات قهوه ۵۰ درصد عربیکا، ۵۰ درصد روبوستا",
       price: 370000,
@@ -283,6 +292,7 @@ export const menu = [
     {
       id: "lotus-shake",
       name: "شیک لوتوس",
+      image: "/menu-images/lotus-shake.png",
       description:
         "۵۰۰ میلی‌لیتر، شیر، بستنی وانیلی، کره لوتوس، بیسکویت لوتوس، سس شکلات",
       price: 440000,
@@ -290,6 +300,7 @@ export const menu = [
     {
       id: "tiramisu-shake",
       name: "شیک تیرامیسو",
+      image: "/menu-images/tiramisu-shake.png",
       description:
         "۵۰۰ میلی‌لیتر، بستنی وانیلی، قهوه کلاسیک، بیسکویت پتی‌بور، موز",
       price: 430000,
@@ -304,6 +315,7 @@ export const menu = [
     {
       id: "peanut-butter-shake",
       name: "شیک بادام زمینی",
+      image: "/menu-images/peanut-butter-shake.png",
       description:
         "۵۰۰ میلی‌لیتر، کره بادام زمینی، بستنی وانیلی، شیر",
       price: 460000,
@@ -311,15 +323,17 @@ export const menu = [
     {
       id: "vanilla-shake",
       name: "شیک وانیل",
+      image: "/menu-images/vanilla-shake.png",
       description:
         "۵۰۰ میلی‌لیتر، شیر، بستنی وانیلی",
       price: 285000,
     },
     {
       id: "nutella-shake",
-      name: "شیک نات نوت",
+      name: "شیک نوتلا ",
+      image: "/menu-images/nutella-shake.png",
       description:
-        "۵۰۰ میلی‌لیتر، بستنی نات نوت، شیر",
+        "۵۰۰ میلی‌لیتر، بستنی، نوتلا،  شیر",
       price: 430000,
     },
   ],
@@ -331,6 +345,7 @@ export const menu = [
     {
       id: "iced-americano-soda-lemon",
       name: "آیس آمریکانو سودا لیمو",
+      image: "/menu-images/iced-americano-soda-lemon.png",
       description:
         "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو، سودا لیمو، یخ",
       price: 300000,
@@ -338,6 +353,7 @@ export const menu = [
     {
       id: "orange-coffee",
       name: "اورنج کافی",
+      image: "/menu-images/orange-coffee.png",
       description:
         "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو، آب پرتقال طبیعی، سودا",
       price: 360000,
@@ -345,6 +361,7 @@ export const menu = [
     {
       id: "iced-latte",
       name: "آیس لته",
+      image: "/menu-images/iced-latte.png",
       description:
         "۵۰۰ میلی‌لیتر، دبل اسپرسو، شیر، یخ",
       options: [
@@ -361,6 +378,7 @@ export const menu = [
     {
       id: "iced-americano",
       name: "آیس آمریکانو",
+      image: "/menu-images/iced-americano.png",
       description:
         "۴۰۰ میلی‌لیتر، دبل اسپرسو، آب سرد، یخ",
       options: [
@@ -377,6 +395,7 @@ export const menu = [
     {
       id: "affogato",
       name: "آفوگاتو",
+      image: "/menu-images/affogato.png",
       description:
         "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو، ۲ اسکوپ بستنی وانیلی",
       options: [
