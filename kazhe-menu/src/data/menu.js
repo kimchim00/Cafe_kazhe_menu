@@ -114,7 +114,7 @@ export const menu = [
     {
       id: "latte",
       name: "لاته",
-       image: "/menu-images/latte.jpg",
+       image: "/menu-images/latte.png",
       description:
         "۳۲۰ میلی‌لیتر، دبل اسپرسو، شیر فوم‌گیری شده",
       options: [
@@ -140,6 +140,7 @@ export const menu = [
     {
       id: "double-espresso",
       name: "اسپرسو دبل",
+      image: "/menu-images/double-espresso.png",
       description:
         "۴۰ میلی‌لیتر، به همراه آب کوچک، شکلات یا کوکی ساید",
       options: [
@@ -165,6 +166,7 @@ export const menu = [
     {
       id: "cortado",
       name: "کورتادو",
+      image: "/menu-images/cortado.png",
       description:
         "۸۰ میلی‌لیتر، دبل اسپرسو، ۴۰ میلی‌لیتر شیر، شیر فوم‌گیری شده",
       options: [
@@ -194,6 +196,7 @@ export const menu = [
     {
       id: "mocha",
       name: "موکا",
+      image: "/menu-images/mocha.png",
       description:
         "۳۲۰ میلی‌لیتر، شیر، شکلات، اسپرسو دبل، شیر فوم‌گیری شده",
       options: [
@@ -228,6 +231,7 @@ export const menu = [
     {
       id: "relaxing-herbal-tea",
       name: "دمنوش آرامش",
+      image: "/menu-images/relaxing-herbal-tea.png",
       description:
         "۲۸۰ میلی‌لیتر، گل گاوزبان، بابونه، عسل، اسطوخودوس",
       price: 170000,
@@ -235,6 +239,7 @@ export const menu = [
     {
       id: "masala-tea",
       name: "چای ماسالا",
+      image: "/menu-images/masala-tea.png",
       description:
         "۲۸۰ میلی‌لیتر، شیر، پودر ماسالا",
       price: 220000,
@@ -242,6 +247,7 @@ export const menu = [
     {
       id: "saffron-karak-tea",
       name: "چای کرک کرک زعفران",
+       image: "/menu-images/saffron-karak-tea.png",
       description:
         "۲۲۰ میلی‌لیتر، شیر، چای کرک",
       price: 240000,
@@ -249,6 +255,7 @@ export const menu = [
     {
       id: "hot-chocolate",
       name: "هات چاکلت",
+       image: "/menu-images/hot-chocolate.png",
       description:
         "۲۶۰ میلی‌لیتر، شکلات ذوب شده، شیر",
       price: 240000,
@@ -317,15 +324,15 @@ export const menu = [
     },
   ],
 },
-  {
+{
   id: "iced-coffee",
   title: "قهوه سرد",
   items: [
     {
       id: "iced-americano-soda-lemon",
-      name: "  آیس آمریکانو سودا لیمو",
+      name: "آیس آمریکانو سودا لیمو",
       description:
-        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو ۲۵۰ روبوستا، ۲۵۰ عربیکا، اضافه شده به آب سرد، یخ",
+        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو، سودا لیمو، یخ",
       price: 300000,
     },
     {
@@ -340,42 +347,48 @@ export const menu = [
       name: "آیس لته",
       description:
         "۵۰۰ میلی‌لیتر، دبل اسپرسو، شیر، یخ",
-      price: 295000,
+      options: [
+        {
+          label: "معمولی",
+          price: 295000,
+        },
+        {
+          label: "۸۰ درصد عربیکا",
+          price: 320000,
+        },
+      ],
     },
     {
-      id: "iced-latte-80-arabica",
-      name: "آیس لته ۸۰ درصد عربیکا",
+      id: "iced-americano",
+      name: "آیس آمریکانو",
       description:
-        "۵۰۰ میلی‌لیتر، ۲ شات اسپرسو ۲۰٪ روبوستا، ۸۰٪ عربیکا، شیر، یخ",
-      price: 320000,
+        "۴۰۰ میلی‌لیتر، دبل اسپرسو، آب سرد، یخ",
+      options: [
+        {
+          label: "۶۰ درصد عربیکا",
+          price: 250000,
+        },
+        {
+          label: "۱۰۰ درصد عربیکا",
+          price: 290000,
+        },
+      ],
     },
     {
-      id: "iced-americano-60-arabica",
-      name: "آیس آمریکانو ۶۰ درصد عربیکا",
+      id: "affogato",
+      name: "آفوگاتو",
       description:
-        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو ۴۰٪ روبوستا، ۶۰٪ عربیکا، اضافه شده به آب سرد، یخ",
-      price: 250000,
-    },
-    {
-      id: "iced-americano-100-arabica",
-      name: "آیس آمریکانو ۱۰۰ درصد عربیکا",
-      description:
-        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو ۱۰۰٪ عربیکا، اضافه شده به آب سرد، یخ",
-      price: 290000,
-    },
-    {
-      id: "affogato-50-arabica",
-      name: "آفوگاتو ۵۰ درصد عربیکا",
-      description:
-        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو ۵۰٪ روبوستا، ۵۰٪ عربیکا، ۲ اسکوپ بستنی وانیلی",
-      price: 280000,
-    },
-    {
-      id: "affogato-80-arabica",
-      name: "آفوگاتو ۸۰ درصد عربیکا",
-      description:
-        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو ۲۰٪ روبوستا، ۸۰٪ عربیکا، ۲ اسکوپ بستنی وانیلی",
-      price: 310000,
+        "۴۰۰ میلی‌لیتر، ۲ شات اسپرسو، ۲ اسکوپ بستنی وانیلی",
+      options: [
+        {
+          label: "۵۰ درصد عربیکا",
+          price: 280000,
+        },
+        {
+          label: "۸۰ درصد عربیکا",
+          price: 310000,
+        },
+      ],
     },
   ],
 },
